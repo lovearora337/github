@@ -7,6 +7,10 @@ while [ "$i" -le 5 ]
 do
 echo -e "Order Name: \c" ; read Order
 echo -e "Order name: $Order" >> mymenu
+if [ "$Order" == "exit" ]
+then
+exit
+fi
 i=$((i+1))
 done
 
